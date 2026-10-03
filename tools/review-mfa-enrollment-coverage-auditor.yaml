@@ -1,0 +1,54 @@
+{
+  "name": "review-mfa-enrollment-coverage-auditor",
+  "description": "Run MFA Enrollment Coverage Auditor",
+  "version": "0.1.0",
+  "input_schema": {
+    "type": "object",
+    "properties": {
+      "payload": {
+        "type": "object",
+        "properties": {
+          "eligible_accounts": {
+            "type": "number",
+            "description": "eligible accounts"
+          },
+          "enrolled_accounts": {
+            "type": "number",
+            "description": "enrolled accounts"
+          },
+          "excluded_groups": {
+            "type": "array",
+            "description": "excluded groups"
+          }
+        },
+        "required": [
+          "eligible_accounts",
+          "enrolled_accounts",
+          "excluded_groups"
+        ]
+      }
+    },
+    "required": [
+      "payload"
+    ]
+  },
+  "output_schema": {
+    "type": "object",
+    "properties": {
+      "status": {
+        "type": "string"
+      },
+      "score": {
+        "type": "object"
+      },
+      "findings": {
+        "type": "array"
+      }
+    }
+  },
+  "implementation": {
+    "type": "script",
+    "path": "review-mfa-enrollment-coverage-auditor.py",
+    "runtime": "python3"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "slug": "mfa-enrollment-coverage-auditor",
+  "title": "MFA Enrollment Coverage Auditor",
+  "category": "cybersecurity",
+  "description": "Review MFA enrollment counts and excluded-group rationales.",
+  "fields": {
+    "eligible_accounts": {
+      "label": "eligible accounts",
+      "kind": "number",
+      "minimum": 1
+    },
+    "enrolled_accounts": {
+      "label": "enrolled accounts",
+      "kind": "number",
+      "minimum": 0
+    },
+    "excluded_groups": {
+      "label": "excluded groups",
+      "kind": "list",
+      "minimum": 1
+    }
+  },
+  "limitations": "Uses caller-provided evidence only; cannot confirm external facts. Human review remains required."
+}

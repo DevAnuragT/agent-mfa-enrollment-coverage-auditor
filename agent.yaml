@@ -1,0 +1,11 @@
+spec_version: "0.1.0"
+name: mfa-enrollment-coverage-auditor
+version: 0.1.0
+description: Review MFA enrollment counts and excluded-group rationales.
+skills:
+  - mfa-enrollment-coverage-auditor-skill
+tools:
+  - review-mfa-enrollment-coverage-auditor
+tags:
+  - cybersecurity
+  - evidence-driven

@@ -1,0 +1,7 @@
+{
+  "eligible_accounts": 1,
+  "enrolled_accounts": 1,
+  "excluded_groups": [
+    "record-1"
+  ]
+}
